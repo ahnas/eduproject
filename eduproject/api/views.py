@@ -14,7 +14,7 @@ from rest_framework.reverse import reverse
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'resume': reverse('create_resume', request=request, format=format),
+        'resume': reverse('resume-list', request=request, format=format),
         'chat': reverse('chat', request=request, format=format),
         'assessments': reverse('assessments', request=request, format=format),
         'quizzes': reverse('quizzes', request=request, format=format),
@@ -25,7 +25,11 @@ def api_root(request, format=None):
         'courses': reverse('courses', request=request, format=format),
     })
 
-class CreateResumeView(generics.CreateAPIView):
+class ResumeListCreateView(generics.ListCreateAPIView):
+    queryset = Resume.objects.all()
+    serializer_class = ResumeSerializer
+
+class ResumeDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Resume.objects.all()
     serializer_class = ResumeSerializer
 

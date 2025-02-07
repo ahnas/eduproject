@@ -5,7 +5,8 @@ urlpatterns = [
 
     path('', views.api_root, name='api_root'),
 
-    path('resume/', views.CreateResumeView.as_view(), name='create_resume'),
+    path('resume/', views.ResumeListCreateView.as_view(), name='resume-list'),
+    path('resume/<int:pk>/', views.ResumeDetailView.as_view(), name='resume-detail'),
     path('chat/', views.ChatMessageListView.as_view(), name='chat'),
     path('assessments/', views.AssessmentListView.as_view(), name='assessments'),
     path('quizzes/', views.QuizListView.as_view(), name='quizzes'),
