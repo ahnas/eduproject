@@ -173,7 +173,7 @@ const OneToOneChat = () => {
       } catch (error) {
         console.error('Error polling messages:', error);
       }
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(pollInterval);
   }, [user]);

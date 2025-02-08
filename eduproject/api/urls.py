@@ -17,10 +17,8 @@ urlpatterns = [
     path("resume/", ResumeListCreateView.as_view(), name="resume-list"),
     path("resume/<int:pk>/", ResumeDetailView.as_view(), name="resume-detail"),
 
-    # Assessments, Quizzes, Reviews
-    path("assessments/", AssessmentListView.as_view(), name="assessments"),
-    path("quizzes/", QuizListView.as_view(), name="quizzes"),
     path("reviews/", ReviewListView.as_view(), name="reviews"),
+    path("reviews/<int:pk>/", ReviewDetailView.as_view(), name="review-detail"),
 
     # Rewards & Achievements
     path("reward/<int:pk>/", RewardDetailView.as_view(), name="reward"),

@@ -35,17 +35,9 @@ class ResumeSerializer(serializers.ModelSerializer):
         model = Resume
         fields = '__all__'
 
-class AssessmentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Assessment
-        fields = '__all__'
-
-class QuizSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Quiz
-        fields = '__all__'
-
 class ReviewSerializer(serializers.ModelSerializer):
+    reviewer_username = serializers.CharField(source='student.username', read_only=True)
+
     class Meta:
         model = Review
         fields = '__all__'

@@ -20,15 +20,7 @@ class Message(models.Model):
 
     def __str__(self):
         return f"{self.sender} -> {self.receiver}: {self.text[:20]}"
-    
-    
-class Assessment(models.Model):
-    title = models.CharField(max_length=255)
-    description = models.TextField()
 
-class Quiz(models.Model):
-    question = models.TextField()
-    answer = models.TextField()
 
 class Review(models.Model):
     student = models.ForeignKey(User, on_delete=models.CASCADE)

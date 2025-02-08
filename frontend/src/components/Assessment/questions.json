@@ -1,0 +1,153 @@
+[
+    {
+      "question": "What is the capital of France?",
+      "options": ["Paris", "London", "Rome", "Berlin"],
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "What is 2 + 2?",
+      "options": ["3", "4", "5", "6"],
+      "correctAnswer": "4"
+    },
+    {
+      "question": "Who wrote 'Hamlet'?",
+      "options": ["Shakespeare", "Hemingway", "Tolstoy", "Austen"],
+      "correctAnswer": "Shakespeare"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Venus", "Mars", "Jupiter"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "question": "What is the largest ocean on Earth?",
+      "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+      "correctAnswer": "Pacific"
+    },
+    {
+      "question": "What is the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "correctAnswer": "8"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Van Gogh", "Da Vinci", "Picasso", "Rembrandt"],
+      "correctAnswer": "Da Vinci"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correctAnswer": "Nile"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Au", "Ag", "Pb", "Fe"],
+      "correctAnswer": "Au"
+    },
+    {
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"],
+      "correctAnswer": "Carbon Dioxide"
+    },
+    {
+      "question": "Who discovered gravity?",
+      "options": ["Newton", "Einstein", "Galileo", "Tesla"],
+      "correctAnswer": "Newton"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["Seoul", "Tokyo", "Beijing", "Bangkok"],
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "How many continents are there?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "7"
+    },
+    {
+      "question": "Who invented the telephone?",
+      "options": ["Edison", "Bell", "Tesla", "Marconi"],
+      "correctAnswer": "Bell"
+    },
+    {
+      "question": "What is the speed of light?",
+      "options": ["300,000 km/s", "150,000 km/s", "500,000 km/s", "100,000 km/s"],
+      "correctAnswer": "300,000 km/s"
+    },
+    {
+      "question": "Which country is known as the Land of the Rising Sun?",
+      "options": ["India", "China", "Japan", "Australia"],
+      "correctAnswer": "Japan"
+    },
+    {
+      "question": "Who developed the theory of relativity?",
+      "options": ["Newton", "Einstein", "Bohr", "Hawking"],
+      "correctAnswer": "Einstein"
+    },
+    {
+      "question": "Which element has the atomic number 1?",
+      "options": ["Oxygen", "Helium", "Hydrogen", "Nitrogen"],
+      "correctAnswer": "Hydrogen"
+    },
+    {
+      "question": "What is the largest mammal?",
+      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      "correctAnswer": "Blue Whale"
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "options": ["Gold", "Iron", "Diamond", "Platinum"],
+      "correctAnswer": "Diamond"
+    },
+    {
+      "question": "Who was the first person to step on the moon?",
+      "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+      "correctAnswer": "Neil Armstrong"
+    },
+    {
+      "question": "Which is the smallest planet in our solar system?",
+      "options": ["Venus", "Mars", "Mercury", "Pluto"],
+      "correctAnswer": "Mercury"
+    },
+    {
+      "question": "Which language is used to create web pages?",
+      "options": ["Python", "Java", "HTML", "C++"],
+      "correctAnswer": "HTML"
+    },
+    {
+      "question": "Which year did World War II end?",
+      "options": ["1943", "1945", "1947", "1950"],
+      "correctAnswer": "1945"
+    },
+    {
+      "question": "What is the boiling point of water?",
+      "options": ["90°C", "100°C", "110°C", "120°C"],
+      "correctAnswer": "100°C"
+    },
+    {
+      "question": "Which company created the iPhone?",
+      "options": ["Samsung", "Microsoft", "Google", "Apple"],
+      "correctAnswer": "Apple"
+    },
+    {
+      "question": "What is the capital of Canada?",
+      "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+      "correctAnswer": "Ottawa"
+    },
+    {
+      "question": "What is the chemical formula for water?",
+      "options": ["H2O", "O2", "CO2", "NaCl"],
+      "correctAnswer": "H2O"
+    },
+    {
+      "question": "Which planet has rings?",
+      "options": ["Earth", "Venus", "Saturn", "Mars"],
+      "correctAnswer": "Saturn"
+    },
+    {
+      "question": "Who painted 'Starry Night'?",
+      "options": ["Van Gogh", "Picasso", "Da Vinci", "Monet"],
+      "correctAnswer": "Van Gogh"
+    }
+  ]
+  

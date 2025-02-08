@@ -59,8 +59,7 @@ const Navbar = () => {
             <li><Link to="/">Resume Chat</Link></li>
             <li><Link to="/mentor-chat">Mentor Chat</Link></li>
             <li><Link to="/one-to-one">1:1 Chat</Link></li>
-            <li><Link to="/assessments">Assessments</Link></li>
-            <li><Link to="/quiz">Quiz</Link></li>
+            <li><Link to="/assessments">Assessments/Quiz</Link></li>
             <li><Link to="/reviews">Reviews</Link></li>
             <li><Link to="/rewards">Rewards</Link></li>
             <li><Link to="/achievements">Achievements</Link></li>

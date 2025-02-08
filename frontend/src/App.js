@@ -4,9 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import ResumeChat from "./components/ResumeChat/ResumeChat";
 import MentorChat from "./components/MentorChat/MentorChat";
 import OneToOneChat from "./components/OneToOneChat/OneToOneChat";
-import Assessment from "./components/Assessment";
-import Quiz from "./components/Quiz";
-import Reviews from "./components/Reviews";
+import Assessment from "./components/Assessment/Assessment";
+import Reviews from "./components/Reviews/Reviews";
 import Rewards from "./components/Rewards";
 import Achievements from "./components/Achievements";
 import Courses from "./components/Courses";
@@ -22,7 +21,6 @@ function App() {
             <Route path="/mentor-chat" element={<MentorChat />} />
             <Route path="/one-to-one" element={<OneToOneChat />} />
             <Route path="/assessments" element={<Assessment />} />
-            <Route path="/quiz" element={<Quiz />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/rewards" element={<Rewards />} />
             <Route path="/achievements" element={<Achievements />} />

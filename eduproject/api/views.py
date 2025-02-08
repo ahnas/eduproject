@@ -38,15 +38,11 @@ class ResumeDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ResumeSerializer
 
 
-class AssessmentListView(generics.ListAPIView):
-    queryset = Assessment.objects.all()
-    serializer_class = AssessmentSerializer
-
-class QuizListView(generics.ListAPIView):
-    queryset = Quiz.objects.all()
-    serializer_class = QuizSerializer
-
 class ReviewListView(generics.ListCreateAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+
+class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
 

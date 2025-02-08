@@ -1,0 +1,119 @@
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .quiz-container h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .quiz-container p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .quiz-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .quiz-container li {
+    padding: 12px;
+    margin: 10px 0;
+    background: #f8f8f8;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid transparent;
+  }
+  
+  .quiz-container li:hover {
+    background: #e0e0e0;
+  }
+  
+  .quiz-container li.correct {
+    background-color: lightgreen !important;
+    border: 2px solid green;
+    color: #fff;
+  }
+  
+  .quiz-container li.wrong {
+    background-color: lightcoral !important;
+    border: 2px solid red;
+    color: #fff;
+  }
+  
+  .quiz-container .timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quiz-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .quiz-container li {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .quiz-container h2 {
+      font-size: 20px;
+    }
+  
+    .quiz-container p {
+      font-size: 16px;
+    }
+  }
+  
+  .quiz-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-rules {
+    font-size: 16px;
+    color: #333;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .start-btn {
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .start-btn:hover {
+    background: #0056b3;
+  }
+
+  .over{
+    place-self: anchor-center;
+    color: green;
+  }
