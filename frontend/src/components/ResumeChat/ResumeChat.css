@@ -2,36 +2,13 @@
   max-width: 600px;
   margin: 50px auto;
   padding: 25px;
-  background: #ffffff;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   text-align: center;
 }
 
-h1 {
-  color: #333;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-bottom: 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-input:focus, textarea:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-  outline: none;
-}
-
-button {
+.resume-container button {
   width: 100%;
   background: #007bff;
   color: #fff;
@@ -43,11 +20,36 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+.resume-container button:hover {
   background: #0056b3;
 }
 
-.resume-output {
+.resume-container h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.resume-container input,
+.resume-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-container input:focus,
+.resume-container textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.resume-container .resume-output {
   margin-top: 20px;
   padding: 20px;
   background: #f4f4f4;
@@ -56,16 +58,16 @@ button:hover {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-.resume-output button {
+.resume-container .resume-output button {
   background: #28a745;
   margin-top: 10px;
 }
 
-.resume-output button:hover {
+.resume-container .resume-output button:hover {
   background: #218838;
 }
 
-.error {
+.resume-container .error {
   color: red;
   margin-top: 10px;
   font-size: 14px;
@@ -77,15 +79,16 @@ button:hover {
     padding: 20px;
   }
 
-  h1 {
+  .resume-container h1 {
     font-size: 20px;
   }
 
-  input, textarea {
+  .resume-container input,
+  .resume-container textarea {
     font-size: 14px;
   }
 
-  button {
+  .resume-container button {
     font-size: 14px;
   }
 }
