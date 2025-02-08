@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
 import "./ResumeChat.css";
 
 const ResumeChat = () => {

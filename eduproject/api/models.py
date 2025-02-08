@@ -11,12 +11,17 @@ class Resume(models.Model):
     def __str__(self):
         return f"Resume - {self.name}"
 
-class ChatMessage(models.Model):
-    sender = models.ForeignKey(User, related_name='sent_messages', on_delete=models.CASCADE)
-    receiver = models.ForeignKey(User, related_name='received_messages', on_delete=models.CASCADE)
-    message = models.TextField()
+
+class Message(models.Model):
+    sender = models.ForeignKey(User, related_name="sent_messages", on_delete=models.CASCADE)
+    receiver = models.ForeignKey(User, related_name="received_messages", on_delete=models.CASCADE)
+    text = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f"{self.sender} -> {self.receiver}: {self.text[:20]}"
+    
+    
 class Assessment(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()

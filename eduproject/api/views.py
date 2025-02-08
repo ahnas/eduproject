@@ -1,29 +1,33 @@
-from rest_framework import generics
+from rest_framework import generics,status,permissions,viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .models import Resume, ChatMessage, Assessment, Quiz, Review, Reward, Achievement, Course
-from .serializers import (
-    ResumeSerializer, ChatMessageSerializer, AssessmentSerializer,
-    QuizSerializer, ReviewSerializer, RewardSerializer, AchievementSerializer, CourseSerializer
-)
+from .models import *
+from .serializers import *
 
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
-from rest_framework.reverse import reverse
 
-@api_view(['GET'])
-def api_root(request, format=None):
-    return Response({
-        'resume': reverse('resume-list', request=request, format=format),
-        'chat': reverse('chat', request=request, format=format),
-        'assessments': reverse('assessments', request=request, format=format),
-        'quizzes': reverse('quizzes', request=request, format=format),
-        'reviews': reverse('reviews', request=request, format=format),
-        'reward': reverse('reward', args=[1], request=request, format=format), 
-        'redeem-reward': reverse('redeem_reward', request=request, format=format),
-        'achievements': reverse('achievements', request=request, format=format),
-        'courses': reverse('courses', request=request, format=format),
-    })
+
+
+
+class RegisterViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = RegisterSerializer
+    permission_classes = [permissions.AllowAny]
+
+    def create(self, request, *args, **kwargs):
+        """Create a new user"""
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        return Response(
+            {"message": "User registered successfully!", "user": UserSerializer(user).data},
+            status=status.HTTP_201_CREATED
+        )
+
+class MessageViewSet(viewsets.ModelViewSet):
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer
+
 
 class ResumeListCreateView(generics.ListCreateAPIView):
     queryset = Resume.objects.all()
@@ -33,9 +37,6 @@ class ResumeDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Resume.objects.all()
     serializer_class = ResumeSerializer
 
-class ChatMessageListView(generics.ListCreateAPIView):
-    queryset = ChatMessage.objects.all()
-    serializer_class = ChatMessageSerializer
 
 class AssessmentListView(generics.ListAPIView):
     queryset = Assessment.objects.all()
