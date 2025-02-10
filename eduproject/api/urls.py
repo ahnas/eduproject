@@ -18,12 +18,12 @@ urlpatterns = [
     path("resume/<int:pk>/", ResumeDetailView.as_view(), name="resume-detail"),
 
     path("reviews/", ReviewListView.as_view(), name="reviews"),
-    path("reviews/<int:pk>/", ReviewDetailView.as_view(), name="review-detail"),
 
     # Rewards & Achievements
-    path("reward/<int:pk>/", RewardDetailView.as_view(), name="reward"),
-    path("redeem-reward/", RedeemRewardView.as_view(), name="redeem_reward"),
+    path("reward/", RewardListView.as_view(), name="reward"),
+    path("reward/<int:pk>/", RewardDetailView.as_view(), name="reward-detail"),
     path("achievements/", AchievementListView.as_view(), name="achievements"),
+    path("achievements/<int:pk>/", AchievementDetailView.as_view(), name="achievements-detail"),
 
     # Courses
     path("courses/", CourseListView.as_view(), name="courses"),

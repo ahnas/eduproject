@@ -22,6 +22,11 @@
     list-style-type: none;
     padding: 0;
   }
+  .quiz-restricted{
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+  }
   
   .quiz-container li {
     padding: 12px;
@@ -49,6 +54,10 @@
     background-color: lightcoral !important;
     border: 2px solid red;
     color: #fff;
+  }
+  .quiz-finish{
+    text-align: center;
+    color: green;
   }
   
   .quiz-container .timer {
@@ -107,6 +116,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
+    margin-top: 20px;
   }
   
   .start-btn:hover {

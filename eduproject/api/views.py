@@ -46,11 +46,21 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
 
-class RewardDetailView(generics.RetrieveUpdateAPIView):
+
+class RewardListView(generics.ListCreateAPIView):
+    queryset = Reward.objects.all()
+    serializer_class = RewardSerializer
+    
+class RewardDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Reward.objects.all()
     serializer_class = RewardSerializer
 
-class AchievementListView(generics.ListAPIView):
+
+class AchievementListView(generics.ListCreateAPIView):
+    queryset = Achievement.objects.all()
+    serializer_class = AchievementSerializer
+
+class AchievementDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Achievement.objects.all()
     serializer_class = AchievementSerializer
 
@@ -58,6 +68,4 @@ class CourseListView(generics.ListAPIView):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
 
-class RedeemRewardView(APIView):
-    def post(self, request):
-        return Response({'status': 'Reward redeemed!'})
+

@@ -1,0 +1,63 @@
+.component {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .component h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4caf50;
+  }
+  
+  .component p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .loading-message {
+    font-style: italic;
+    color: #888;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .component {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  
+    .component h1 {
+      font-size: 1.8rem;
+    }
+  
+    .component p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .component {
+      padding: 1rem;
+    }
+  
+    .component h1 {
+      font-size: 1.5rem;
+    }
+  
+    .component p {
+      font-size: 0.9rem;
+    }
+  }

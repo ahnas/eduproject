@@ -43,6 +43,7 @@ class ReviewSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class RewardSerializer(serializers.ModelSerializer):
+    username = serializers.CharField(source='user.username', read_only=True)
     class Meta:
         model = Reward
         fields = '__all__'

@@ -36,7 +36,6 @@ class Reward(models.Model):
 class Achievement(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
-    description = models.TextField()
     achieved_on = models.DateField()
 
 class Course(models.Model):

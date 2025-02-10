@@ -6,9 +6,8 @@ import MentorChat from "./components/MentorChat/MentorChat";
 import OneToOneChat from "./components/OneToOneChat/OneToOneChat";
 import Assessment from "./components/Assessment/Assessment";
 import Reviews from "./components/Reviews/Reviews";
-import Rewards from "./components/Rewards";
-import Achievements from "./components/Achievements";
-import Courses from "./components/Courses";
+import Rewards from "./components/Rewards/Rewards";
+import Courses from "./components/Courses/Courses";
 import "./App.css";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
             <Route path="/assessments" element={<Assessment />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/rewards" element={<Rewards />} />
-            <Route path="/achievements" element={<Achievements />} />
             <Route path="/courses" element={<Courses />} />
           </Routes>
         </div>
